@@ -1,0 +1,21 @@
+@mixin flex($fd, $jc, $ai, $gp) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}
+
+@mixin Inter($fs, $fw, $lh) {
+    font-family: 'Inter', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin Lodster($fs, $fw, $lh) {
+    font-family: 'Lodster', cursive;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}

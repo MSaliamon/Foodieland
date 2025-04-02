@@ -1,0 +1,15 @@
+@use '../../scss/mixins';
+@use '../../scss/reset';
+@use '../../scss/vars';
+
+.header {
+    @include mixins.flex(row, space-around, center, 0px);
+    padding: 45px 0;
+    &__logo {
+        @include mixins.Lodster(24px, 400, 30px);
+        color: vars.$second-color;
+    }
+    &-socials {
+        @include mixins.flex(row, center, center, 40px);
+    }
+}

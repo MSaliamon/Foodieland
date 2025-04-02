@@ -1,10 +1,26 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
+import Layout from './pages/Layout/Layout'
+import Blog from './pages/Blog/Blog'
+import Recipe from './pages/Recipe/Recipe'
+import Contact from './pages/Contact/Contact'
+import SignIn from './pages/SignIn/SignIn'
+import SignUp from './pages/SignUp/SignUp'
 
 function App() {
 
   return (
     <>
-      <h1>1</h1>
+      <BrowserRouter basename='/Foodieland/'>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="recipe" element={<Recipe />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
