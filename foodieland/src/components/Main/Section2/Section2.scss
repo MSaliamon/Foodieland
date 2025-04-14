@@ -1,0 +1,32 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section2 {
+    @include mixins.flex(column, center, center, 80px);
+    &-container1 {
+        @include mixins.flex(row, space-between, center, 0px);
+        width: 71%;
+        &__title {
+            @include mixins.Inter(64px, 600, 77px);
+        }
+        &__btn {
+            @include mixins.flex(row, center, center, 15px);
+            @include mixins.Inter(14px, 600, 17px);
+            padding: 18px 36px;
+            border-radius: 16px;
+            background-color: vars.$card-bg;
+            color: vars.$second-color;
+        }
+    }
+    &-container2 {
+        @include mixins.flex(row, center, center, 40px);
+        .section2-box {
+            @include mixins.flex(column, center, center, 50px);
+            padding: 30px 40px;
+            &__text {
+                @include mixins.Inter(18px, 600, 22px);
+            }
+        }
+    }
+}
