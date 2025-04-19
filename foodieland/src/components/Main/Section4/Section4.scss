@@ -1,0 +1,30 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section4 {
+    @include mixins.flex(row, center, center, 0px);
+    padding: 143px;
+    width: 100%;
+    &-container {
+        @include mixins.flex(column, flex-start, flex-start, 72px);
+        &__textbox {
+            @include mixins.flex(column, flex-start, flex-start, 24px);
+            &-title {
+                @include mixins.Inter(48px, 600, 58px);
+                width: 51%;
+            }
+            &-text {
+                @include mixins.Inter(16px, 400, 28px);
+                width: 50%;
+            }
+        }
+        &__btn {
+            @include mixins.Inter(14px, 600, 17px);
+            border-radius: 16px;
+            background-color: vars.$second-color;
+            padding: 21px 52px;
+            color: vars.$main-color;
+        }
+    }
+}
