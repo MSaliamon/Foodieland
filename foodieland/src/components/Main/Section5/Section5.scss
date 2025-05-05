@@ -1,0 +1,22 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section5 {
+    @include mixins.flex(column, center, center, 80px);
+    &-textbox {
+        @include mixins.flex(column, center, center, 24px);
+        &__title {
+            @include mixins.Inter(48px, 600, 58px);
+        }
+        &__text {
+            @include mixins.Inter(16px, 400, 28px);
+            text-align: center;
+            width: 80%;
+        }
+    }
+    &-container {
+        @include mixins.flex(row, center, center, 40px);
+        width: 100%;
+    }
+}
