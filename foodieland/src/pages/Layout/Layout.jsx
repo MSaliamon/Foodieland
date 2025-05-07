@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Main from '../../components/Main/Main'
+import Footer from '../../components/Footer/Footer'
 
 function Layout() {
   return (
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   )
 }

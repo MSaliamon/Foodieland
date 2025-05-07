@@ -8,7 +8,7 @@ import instagram from '../../assets/homepage/svg/instagram.svg'
 function Header() {
   return (
     <header className="header">
-        <Link to="/" className='header__logo'>Foodieland.</Link>
+        <Link to="/" className='logo'>Foodieland.</Link>
         <Nav />
         <div className="header-socials">
           <img src={facebook} alt="facebook" className="header-socials__img" />

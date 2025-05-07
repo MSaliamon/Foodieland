@@ -5,7 +5,7 @@
 .header {
     @include mixins.flex(row, space-around, center, 0px);
     padding: 45px 0;
-    &__logo {
+    .logo {
         @include mixins.Lodster(24px, 400, 30px);
         color: vars.$second-color;
     }
