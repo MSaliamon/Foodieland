@@ -1,0 +1,35 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section7 {
+    @include mixins.flex(column, center, center, 64px);
+    margin: 160px 80px;
+    padding: 80px 345px;
+    background-color: vars.$card-bg;
+    border-radius: 60px;
+    &-textbox {
+        @include mixins.flex(column, center, center, 24px);
+        &__title {
+            @include mixins.Inter(48px, 600, 58px);
+        }
+        &__text {
+            @include mixins.Inter(16px, 400, 28px);
+            text-align: center;
+            width: 90%;
+        }
+    }
+    &-container {
+        @include mixins.flex(row, flex-start, center, 144px);
+        padding: 10px;
+        background-color: vars.$main-color;
+        border-radius: 24px;
+        &__btn {
+            @include mixins.Inter(14px, 600, 17px);
+            padding: 21px 46px;
+            border-radius: 16px;
+            background-color: vars.$second-color;
+            color: vars.$main-color;
+        }
+    }
+}
