@@ -11,11 +11,12 @@
     width: 70%;
     &__heart {
         position: absolute;
-        left: 300px;
+        left: 250px;
         top: 50px;
     }
     &__img {
         border-radius: 30px;
+        width: 100%;
     }
     &__text {
         @include mixins.Inter(24px, 600, 32px);
