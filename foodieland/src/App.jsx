@@ -16,9 +16,6 @@ function App() {
           <Route path="/" element={<Layout />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="signin" element={<SignIn />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="recipe" element={<Recipe />} />
-          <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
